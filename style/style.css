@@ -7,6 +7,8 @@
     --black-200: #121212;
     --black-300: #080808;
 
+    --gray-100: #333333;
+
     --red-100: #FF3333;
     --red-200: #AA2222;
 }
@@ -23,8 +25,6 @@ html {
     margin: 0;
     scrollbar-width: none;
     text-decoration: none;
-
-
 }
 
 h2 {
@@ -111,10 +111,26 @@ section#hero div#col-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
+    gap: 120px;
     width: 100%;
     z-index: 10;
     
+}
+
+section#hero div#col-1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section#hero div#col-1 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: fit-content;
+    border: var(--yellow-100) 1px solid;
+    border-radius: 8px;
 }
 
 section#hero div#col-1 h1 {
@@ -200,6 +216,8 @@ section#projects {
     gap: 64px;
     width: 100vw;
     padding: 0 72px 120px 0;
+
+    scroll-margin-top: 10px;
 }
 
 div.title-and-badge {
@@ -384,6 +402,8 @@ section#about-me {
     width: 100vw;
     padding: 120px 72px 120px 0;
     background-color: var(--white);
+
+    scroll-margin-top: -110px;
 }
 
 section#about-me div.title-and-badge span,  section#about-me div.title-and-badge h2{
@@ -408,32 +428,33 @@ section#about-me div.card-about-me {
 
 section#about-me div.card-about-me div.card-about-me-col1 {
     width: 644px;
-}
-
-section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container {
-    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 64px;
 }
 
 section#about-me div.card-about-me div.card-about-me-col1 div.about-me-title-container div.title-and-subtitle h3 {
     color: var(--white);
 }
 
-section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container ul {
+section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    width: 564px;
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
 }
 
-section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container ul li {
+
+section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container p {
+    background-color: var(--gray-100);
+    padding: 24px;
+    border-radius: 16px ;
+    width: fit-content;
+
     font-size: 16px;
     color: var(--white);
-}
-
-section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container ul li::marker {
-    color: var(--yellow-100);
 }
 
 section#about-me div.card-about-me div.card-about-me-col2 {
