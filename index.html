@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/style.css">
+
+    <title>Fernando Vieira - portifolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h4 id="logo-name"><a href="#">Fernando Vieira</a></h4>
+            <div>
+                <p><a href="#projects">Projetos</a></p>
+                <p><a href="#about-me">Sobre mim</a></p>
+                <p><a href="#contact">Contato</a></p>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="assets/lines.webp" alt="imagem linhas background" width="1140" height="707">
+        <div id="col-1">
+            <h1>Analista de dados</h1>
+            <p>Analista de BI com 5 anos de experiência, dominando as principais ferramentas e metodologias do mercado, sou capaz de desenvolver dashboards personalizados, relatórios e análises preditivas.</p>
+        </div>
+
+        <div id="col-2">
+            <div id="yellow-rectangle">
+                <img src="/assets/fernando-hero-menor.webp" alt="imagem de perfil homem com barba e oculos">
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="botao-flutuante" onclick="scrollToTop()">
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="black" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </a>
+
+    <section id="projects">
+        <div class="title-and-badge">
+            <span>Destaques</span>
+            <h2>Projetos</h2>
+        </div>
+        
+        <div class="card-project">
+
+            <div class="card-project-col1">
+                <div class="project-title-container">
+                    <div class="title-and-subtitle">
+                        <h3>Hashtag Eletro</h3>
+                        <p>Relatório de vendas</p>
+                    </div>
+                    
+                    <div class="project-badges">
+                        <span>Total faturamento</span>
+                        <span>Total de pedidos</span>
+                        <span>Margem de lucro</span>
+                    </div>
+                </div>
+
+                <div class="project-content-container">
+                    <p>Desenvolvido no Power BI, este dashboard oferece uma visão completa e detalhada dos principais indicadores de performance do negócio, permitindo analisar métricas cruciais</p>
+                    <a href="#"><button class="project-button">Ver projeto</button></a>
+                </div>
+            </div>
+
+            <div class="card-project-col2">
+                <div class="project-images">
+                    <div class="blur"></div>
+                    <img src="assets/card1_dashboard_1x.webp" alt="relatorio de vendas 1">
+                    <img src="assets/card2_dashboard_1x.webp" alt="relatorio de vendas 2">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card-project">
+
+            <div class="card-project-col1">
+                <div class="project-title-container">
+                    <div class="title-and-subtitle">
+                        <h3>Relatório SAC</h3>
+                        <p>Análise de atendimento aos usuários</p>
+                    </div>
+                    
+                    <div class="project-badges">
+                        <span>Total de atendimentos</span>
+                        <span>Média de respostas</span>
+                        <span>Média diaria de chamados</span>
+                        <span>Média de respostas em dia</span>
+                    </div>
+                </div>
+
+                <div class="project-content-container">
+                    <p>Melhore a experiência do seu cliente! Este dashboard mostra em detalhes o desempenho do seu SAC, ajudando a identificar gargalos e otimizar o atendimento.</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiYWUyZmFhZTEtYzRhMC00YWJkLWIwYWEtMmMwYmU5ODY0YjkxIiwidCI6ImY4ZmRhZWE0LWMyNmEtNGZjMC1iNjA2LTFlY2E1NWYyMjZhZiJ9"><button class="project-button">Ver projeto</button></a>
+                </div>
+            </div>
+
+            <div class="card-project-col2 green">
+                <div class="project-images">
+                    <img class="img-dados-atendimento rotation" src="assets/dados_atendimento_1x.webp" alt="relatorio de atendimentos" width="420">
+                    <img class="img-porcentagem rotation" src="assets/porcentagem_1x.webp" alt="porcentagem atendimentos" width="130">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-project">
+
+            <div class="card-project-col1">
+                <div class="project-title-container">
+                    <div class="title-and-subtitle">
+                        <h3>Dashboard Financeiro</h3>
+                        <p>Relatório de pagamentos</p>
+                    </div>
+                    
+                    <div class="project-badges">
+                        <span>Visão geral</span>
+                        <span>Recebimentos</span>
+                        <span>Pagamentos</span>
+                    </div>
+                </div>
+
+                <div class="project-content-container">
+                    <p>Dashboard Power BI que monitora o fluxo de pagamentos da empresa, detalhando recebimentos em dia e em atraso. Ideal para acompanhar a saúde financeira e tomar decisões estratégicas.</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiN2U2NDE2NzMtYTNlMy00ZjEwLTllZDUtOThjOWE4YzViNDg5IiwidCI6ImY4ZmRhZWE0LWMyNmEtNGZjMC1iNjA2LTFlY2E1NWYyMjZhZiJ9"><button class="project-button">Ver projeto</button></a>
+                </div>
+            </div>
+
+            <div class="card-project-col2 light-green">
+                <div class="project-images">
+                    <img class="img-dados-financeiro" src="assets/dados_financeiros_1x.webp" alt="dashboard financeiro" width="647">
+                    <img class="img-porcentagem-financeiro" src="assets/porcentagem_card2_1x.webp" alt="porcentagem financeira" width="224">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me">
+
+        <div class="about-me-content">
+            <div class="title-and-badge">
+                <span>Skills</span>
+                <h2>Sobre mim</h2>
+            </div>
+    
+            <div class="card-about-me">
+                <div class="card-about-me-col1">
+                    <div class="about-me-title-container">
+                        <div class="title-and-subtitle">
+                            <h3>Fernando Vieira</h3>
+                            <p>Principais serviços</p>
+                        </div>
+                    </div>
+    
+                    <div class="about-me-content-container">
+                        <ul>
+                            <li><strong>+ 5 anos de experiência</strong> em transformar informações em conhecimento</li>
+                            <li><strong>Domínio nas principais ferramentas</strong> e metodologias do mercado</li>
+                            <li><Strong>Desenvolvimento de soluções de BI</Strong> sob medida atender cada cliente</li>
+                            <li><strong>Criação de dashboards intuitivos, realização de análises preditivas</strong>  e comunicar insights complexos de forma clara e concisa </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card-about-me-col2">
+                    <div class="about-me-image-container">
+                        <div class="dark-blur"></div>
+                        <img class="about-me-image" src="assets/about-me-image.webp" alt="imagem fernando vieira com simbolo do power bi e excel ao fundo" width="643">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer id="contact">
+        <div class="circle-container">
+            <h4 id="circle-text">Analista de dados • Fernando Vieira •</h4>
+        </div>
+        <div class="footer-content">
+            <div class="footer-content-text">
+                <p>Gostou de algum projeto?</p>
+                <h2>Vamos Conversar</h2>
+            </div>
+            <a href="https://www.linkedin.com/in/fernandovieirafarias/" target="_blank"><button></button></a>
+        </div>
+        
+    </footer>
+    
+</body>
+
+<script src="script/script.js"></script>
+
+</html>

@@ -1,0 +1,513 @@
+:root {
+    --yellow-100: #EAB822;
+    --yellow-200: #D8990F;
+
+    --white: #EBEBEB;
+    --black-100: #1C1C1C;
+    --black-200: #121212;
+    --black-300: #080808;
+
+    --red-100: #FF3333;
+    --red-200: #AA2222;
+}
+
+
+
+html { 
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Inter', 'Montserrat', 'sans-serif';
+    box-sizing: border-box;
+    margin: 0;
+    scrollbar-width: none;
+    text-decoration: none;
+
+
+}
+
+h2 {
+    font-size: 64px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-300);
+    flex-direction: column;
+    height: auto;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 72px;
+    flex-direction: column;
+
+    background-color: var(--black-300);
+    color: var(--white);
+
+}
+
+
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: var(--white);
+
+}
+
+
+
+header nav h4 a {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; 
+    color: var(--white);
+}
+
+header nav div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 51px
+}
+
+header nav div p a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+    padding: 16px 12px;
+}
+
+section#hero {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    
+    width: 100%;
+    height: 90vh;
+    padding-left: 72px;
+}
+
+section#hero img {
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+}
+
+section#hero div#col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    z-index: 10;
+    
+}
+
+section#hero div#col-1 h1 {
+    color: var(--yellow-100);
+    width: 486px;
+
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98px;
+}
+
+section#hero div#col-1 p {
+    color: var(--white);
+    width: 538px;
+}
+
+section#hero div#col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+
+
+}
+
+section#hero div#col-2 div#yellow-rectangle {
+    width: 704px;
+    height: 400px;
+
+    background-color: var(--yellow-200);
+    border-radius: 120px 0px 0px 120px;
+    
+    position: absolute;
+    right: 0;
+
+}
+
+section#hero div#col-2 div#yellow-rectangle img {
+    display: block;
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
+}
+
+.botao-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--yellow-100);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease-in-out; 
+    pointer-events: none; /* Desabilita clique quando invisível */
+}
+
+.show {
+    opacity: 1; /* Visível */
+    pointer-events: auto; /* Habilita clique quando visível */
+}
+
+.botao-flutuante:hover {
+    background-color: var(--yellow-200);
+}
+
+section#projects {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 64px;
+    width: 100vw;
+    padding: 0 72px 120px 0;
+}
+
+div.title-and-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: fit-content;
+}
+
+div.title-and-badge span {
+    color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+    border: 1px solid var(--yellow-200);
+    border-radius: 32px;
+    padding: 8px 16px;
+}
+
+div.title-and-badge h2 {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    color: var(--white);
+}
+
+section#projects div.card-project {
+    height: 710px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    color: var(--white);
+    background-color: transparent;
+}
+
+section#projects div.card-project div.card-project-col1, section#about-me div.card-about-me div.card-about-me-col1 {
+    background-color: var(--black-100);
+    padding: 40px;
+    border-radius: 64px 0 0 64px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section#projects div.card-project div.card-project-col1 div.project-title-container, section#about-me div.card-about-me div.card-about-me-col1 div.about-me-title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section#projects div.card-project div.card-project-col1 div.project-title-container div.title-and-subtitle, section#about-me div.card-about-me div.card-about-me-col1 div.about-me-title-container div.title-and-subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+section#projects div.card-project div.card-project-col1 div.project-title-container div.title-and-subtitle h3, section#about-me div.card-about-me div.card-about-me-col1 div.about-me-title-container div.title-and-subtitle h3 {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+section#projects div.card-project div.card-project-col1 div.project-title-container div.title-and-subtitle p, section#about-me div.card-about-me div.card-about-me-col1 div.about-me-title-container div.title-and-subtitle p {
+    color: var(--yellow-100);
+    font-size: 24px;
+    line-height: 28px;
+}
+
+section#projects div.card-project div.card-project-col1 div.project-title-container div.project-badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 410px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+section#projects div.card-project div.card-project-col1 div.project-title-container div.project-badges span {
+    padding: 8px 16px;
+    border-radius: 32px;
+    background-color: var(--black-300);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+section#projects div.card-project div.card-project-col1 div.project-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 458px;
+}
+
+section#projects div.card-project div.card-project-col1 div.project-content-container button {
+    background-color: var(--red-100);
+    border: none;
+    outline: none;
+    padding: 16px 32px;
+    width: 149px;
+    border-radius: 32px;
+    color: var(--white);
+    font-weight: 500;
+
+}
+
+section#projects div.card-project div.card-project-col1 div.project-content-container button:hover {
+    transition: 0.3s ease all;
+    background-color: var(--red-200);
+}
+
+section#projects div.card-project div.card-project-col2, section#about-me div.card-about-me div.card-about-me-col2 {
+    background-color: var(--black-200);
+    border-radius: 0 64px 64px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+section#projects div.card-project div.card-project-col2 div.project-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 673px;
+}
+
+section#projects div.card-project div.card-project-col2 div.project-images div.blur {
+    position: absolute;
+    width: 673px;
+    height: 255px;
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.00) 41.18%, rgba(19, 19, 19, 0.8) 95.64%);
+}
+
+section#projects div.card-project div.green {
+    background-color: #385355;
+}
+
+img.rotation {
+    transform: rotate(-45deg) skewY(30deg);
+}
+
+section#projects div.card-project div.card-project-col2 div.project-images img.img-porcentagem {
+    position: relative;
+    z-index: 1;
+    right: 500px;
+}
+
+section#projects div.card-project div.card-project-col2 div.project-images img.img-dados-atendimento {
+    z-index: 10;
+    position: relative;
+    left: 140px;
+    box-shadow: -100.117px 273.395px 81.826px 0px rgba(24, 32, 33, 0.01), -64.498px 174.241px 74.125px 0px rgba(24, 32, 33, 0.05), -36.581px 98.191px 62.573px 0px rgba(24, 32, 33, 0.16), -16.365px 43.32px 46.208px 0px rgba(24, 32, 33, 0.27), -3.851px 10.589px 25.992px 0px rgba(24, 32, 33, 0.31);
+}
+
+section#projects div.card-project div.light-green {
+    background-color: #EBFDFF;
+}
+
+section#projects div.card-project div.card-project-col2 div.project-images img.img-porcentagem-financeiro {
+    position: relative;
+    right: 250px;
+    bottom: 100px;
+    box-shadow: -71px 123px 40px 0px rgba(24, 32, 33, 0.00), -45px 79px 36px 0px rgba(24, 32, 33, 0.02), -25px 44px 31px 0px rgba(24, 32, 33, 0.06), -11px 20px 23px 0px rgba(24, 32, 33, 0.10), -3px 5px 13px 0px rgba(24, 32, 33, 0.12);
+}
+
+section#about-me {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 64px;
+    width: 100vw;
+    padding: 120px 72px 120px 0;
+    background-color: var(--white);
+}
+
+section#about-me div.title-and-badge span,  section#about-me div.title-and-badge h2{
+    color: var(--black-300);
+}
+
+section#about-me div.about-me-content {
+    width: 1296px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+section#about-me div.card-about-me {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    height: 710px;
+}
+
+section#about-me div.card-about-me div.card-about-me-col1 {
+    width: 644px;
+}
+
+section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container {
+    padding-left: 16px;
+}
+
+section#about-me div.card-about-me div.card-about-me-col1 div.about-me-title-container div.title-and-subtitle h3 {
+    color: var(--white);
+}
+
+section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 564px;
+    padding: 0;
+}
+
+section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container ul li {
+    font-size: 16px;
+    color: var(--white);
+}
+
+section#about-me div.card-about-me div.card-about-me-col1 div.about-me-content-container ul li::marker {
+    color: var(--yellow-100);
+}
+
+section#about-me div.card-about-me div.card-about-me-col2 {
+    width: 652px;
+}
+
+section#about-me div.card-about-me div.card-about-me-col2 div.about-me-image {
+    width: 673px;
+}
+
+section#about-me div.card-about-me div.card-about-me-col2 div.about-me-image-container div.dark-blur {
+    width: 620px;
+    height: 662px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.00) 50%, #121212 88.37%);
+}
+
+footer {
+    background-color: var(--black-300);
+    display: flex;
+    width: 100%;
+    padding: 120px 72px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: var(--white);
+}
+
+footer div.circle-container {
+    width: 160px;
+    height: 160px;
+    padding-left: 72px;
+}
+
+span.circle-span {
+    position: absolute;
+    transform-origin: 0 80px;
+}
+
+#circle-text {
+    height: 160px;
+    font-size: 16px;
+    color: var(--yellow-100);
+    animation: animate 5s linear infinite;
+    display: inline-block;
+    letter-spacing: 100px
+}
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+footer div.footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div.footer-content button {
+    background: transparent;
+    width: 70px;
+    height: 70px;
+    background-image: url(../assets/seta.webp); 
+    outline: none;
+    border: none;
+}
+
+footer div.footer-content button:hover {
+    cursor: pointer;
+}
