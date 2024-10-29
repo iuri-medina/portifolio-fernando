@@ -209,13 +209,13 @@ section#hero div#col-2 div#yellow-rectangle img {
 }
 
 section#projects {
+    height: fit-content;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 64px;
-    width: 100vw;
-    padding: 0 72px 120px 0;
+    padding: 0 0 120px 0;
 
     scroll-margin-top: 10px;
 }
@@ -351,7 +351,7 @@ section#projects div.card-project div.card-project-col2 div.project-images {
     justify-content: space-between;
     align-items: flex-end;
 
-    width: 673px;
+    width: 644px;
 }
 
 section#projects div.card-project div.card-project-col2 div.project-images div.blur {
@@ -372,14 +372,18 @@ img.rotation {
 section#projects div.card-project div.card-project-col2 div.project-images img.img-porcentagem {
     position: relative;
     z-index: 1;
-    right: 500px;
+    right: 180px;
 }
 
 section#projects div.card-project div.card-project-col2 div.project-images img.img-dados-atendimento {
     z-index: 10;
     position: relative;
-    left: 140px;
+    left: 50px;
     box-shadow: -100.117px 273.395px 81.826px 0px rgba(24, 32, 33, 0.01), -64.498px 174.241px 74.125px 0px rgba(24, 32, 33, 0.05), -36.581px 98.191px 62.573px 0px rgba(24, 32, 33, 0.16), -16.365px 43.32px 46.208px 0px rgba(24, 32, 33, 0.27), -3.851px 10.589px 25.992px 0px rgba(24, 32, 33, 0.31);
+}
+
+section#projects div.card-project div.card-project-col2 div.project-images img.img-dados-financeiro {
+    margin-left: 105px;
 }
 
 section#projects div.card-project div.light-green {
@@ -388,8 +392,8 @@ section#projects div.card-project div.light-green {
 
 section#projects div.card-project div.card-project-col2 div.project-images img.img-porcentagem-financeiro {
     position: relative;
-    right: 250px;
-    bottom: 100px;
+    right: 115px;
+    bottom: 40px;
     box-shadow: -71px 123px 40px 0px rgba(24, 32, 33, 0.00), -45px 79px 36px 0px rgba(24, 32, 33, 0.02), -25px 44px 31px 0px rgba(24, 32, 33, 0.06), -11px 20px 23px 0px rgba(24, 32, 33, 0.10), -3px 5px 13px 0px rgba(24, 32, 33, 0.12);
 }
 
@@ -411,7 +415,7 @@ section#about-me div.title-and-badge span,  section#about-me div.title-and-badge
 }
 
 section#about-me div.about-me-content {
-    width: 1296px;
+    width: fit-content;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -531,4 +535,364 @@ footer div.footer-content button {
 
 footer div.footer-content button:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+
+    * {
+        /* outline: 1px solid red;  */
+    }
+
+    #hero {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hero div#col-1,  #hero div#col-1 div, #hero div#col-1 div h1, #hero div#col-1 div h1 p{
+        width: 700px !important;
+    }
+
+    #hero div#col-2, #hero div#col-2 div#yellow-rectangle, #hero div#col-2 div#yellow-rectangle img.fernando-hero-image {
+        display: none;
+        position: absolute;
+    }
+
+    section#projects {
+        height: 100%;
+        justify-content: space-between;
+        gap: 120px;
+
+    }
+
+    section#projects div.title-and-badge {
+        margin-bottom: 120px;
+    }
+
+
+    section#projects div.card-project {
+        height: 640px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    
+        color: var(--white);
+        background-color: transparent;
+    }
+    
+    section#projects div.card-project div.card-project-col1, section#about-me div.card-about-me div.card-about-me-col1 {
+        background-color: var(--black-100);
+        padding: 40px;
+        border-radius: 0 0 64px 64px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    section#projects div.card-project div.card-project-col1 div.project-title-container div.project-badges {
+        margin-bottom: 16px;       
+    }
+
+
+
+    
+    section#projects div.card-project div.card-project-col2, section#about-me div.card-about-me div.card-about-me-col2 {
+        border-radius: 64px 64px 0 0;
+        height: 100%;
+    }
+    
+    section#about-me {
+        display: flex;
+        justify-content: flex-start;
+        height: fit-content;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+        width: 100vw;
+        padding: 64px 0 120px 0;
+        background-color: var(--white);
+    
+        scroll-margin-top: -110px;
+    }
+    
+    section#about-me div.title-and-badge span,  section#about-me div.title-and-badge h2{
+        color: var(--black-300);
+    }
+    
+    section#about-me div.about-me-content {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        gap: 750px;
+    }
+    
+    section#about-me div.card-about-me {
+        width: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 710px;
+    }
+    
+    section#about-me div.card-about-me div.card-about-me-col1 {
+        width: 644px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 64px;
+    }
+    
+    section#about-me div.card-about-me div.card-about-me-col2 {
+        width: 644px;
+    }
+    
+    section#about-me div.card-about-me div.card-about-me-col2 div.about-me-image {
+        width: 644px;
+    }
+    
+    section#about-me div.card-about-me div.card-about-me-col2 div.about-me-image-container div.dark-blur {
+        width: 644px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 24px 24px 0 24px;
+    }
+
+    header nav div, section#hero img{
+        display: none;
+    }
+
+    section#hero {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    section#hero div#col-1 {
+        width: 500px !important;
+    }
+
+
+    section#about-me div.about-me-content {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        gap: 750px;
+    }
+}
+
+  /* Media Query para Smartphones Menores */
+@media (max-width: 480px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 54px;
+    } 
+
+    section#hero {
+        align-items: flex-start;
+        justify-content: center;
+        padding: 24px;
+    }
+
+    section#hero div#col-1 span {
+        display: none;
+    }
+
+    section#hero div#col-1, section#hero div#col-1 div, section#hero div#col-1 h1, section#hero div#col-1 p {
+        width: 343px !important; 
+    }
+
+    section#hero div#col-2{
+        width: 0;
+    }
+
+    section#projects {
+        height: 100%;
+        justify-content: space-between;
+        gap: 64px;
+
+    }
+
+    section#projects div.title-and-badge {
+        margin-bottom: 120px;
+    }
+
+
+    section#projects div.card-project {
+        height: fit-content;
+        width: 343px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    
+        color: var(--white);
+        background-color: var(--black-100);
+        border-radius: 16px 16px 16px 16px;;
+    }
+    
+    section#projects div.card-project div.card-project-col1, section#about-me div.card-about-me div.card-about-me-col1 {
+        background-color: var(--black-100);
+        padding: 40px;
+        border-radius: 0 0 16px 16px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    section#projects div.card-project div.card-project-col1 div.project-title-container div.project-badges {
+        margin-bottom: 16px;
+    }
+
+    
+    section#projects div.card-project div.card-project-col2, section#about-me div.card-about-me div.card-about-me-col2 {
+        border-radius: 16px 16px 0 0;
+        height: 228px ;
+        width: 343px;
+    }
+
+    section#projects div.card-project div.card-project-col2 div.project-images {
+        width: 343px;
+    }
+
+    section#projects div.card-project div.card-project-col2 div.project-images div.blur {
+        width: 343px;
+    }
+
+    section#projects div.card-project div.card-project-col2 div.project-images {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    section#projects div.card-project div.card-project-col1 div.project-title-container div.project-badges {
+        margin-bottom: 16px;
+        width: 279px;
+        
+    }
+
+    section#projects div.card-project div.card-project-col1 div.project-title-container div.project-badges span {
+        font-size: 10px;
+    }
+
+    section#projects div.card-project div.card-project-col1 div.project-content-container {
+        width: 343px;
+    }
+
+    section#projects div.card-project div.card-project-col1 div.project-content-container p {
+        width: 279px;
+    }
+
+    section#projects div.card-project div.card-project-col1 div.project-content-container a {
+        width: 149px;
+    }
+
+    section#projects div.card-project div.card-project-col1 div.project-title-container div.title-and-subtitle h3 {
+        width: 32px;
+    }
+
+
+    
+    section#about-me {
+        display: flex;
+        justify-content: flex-start;
+        height: fit-content;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+        width: 100vw;
+        padding: 64px 0 120px 0;
+        background-color: var(--white);
+    
+        scroll-margin-top: -110px;
+    }
+    
+    section#about-me div.title-and-badge span,  section#about-me div.title-and-badge h2{
+        color: var(--black-300);
+    }
+    
+    section#about-me div.about-me-content {
+        width: 343px;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        gap: 750px;
+    }
+    
+    section#about-me div.card-about-me {
+        width: 343px;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 710px;
+    }
+    
+    section#about-me div.card-about-me div.card-about-me-col1 {
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 64px;
+    }
+    
+    section#about-me div.card-about-me div.card-about-me-col2 {
+        height: fit-content;
+        width: 343px;
+    }
+    
+    section#about-me div.card-about-me div.card-about-me-col2 img.about-me-image {
+        width: 343px;
+        height: 343px;
+    }
+    
+    section#about-me div.card-about-me div.card-about-me-col2 div.about-me-image-container div.dark-blur {
+        width: 343px;
+        height: 343px;
+    }
+
+    footer#contact {
+        padding: 120px 32px;
+    }
+
+    .width-61 {
+        width: 61px;
+    }
+
+    .width-100 {
+        width: 100px;
+    }
+
+    .width-122 {
+        width: 122px;
+    }
+
+    .width-166 {
+        width: 166px;
+    }
+
+    .width-290 {
+        width: 290px;
+    }
+
 }
